@@ -1,7 +1,8 @@
 ﻿using EventStore.ClientAPI;
-using NerdStore.Core.Data.EventSourcing;
-using NerdStore.Core.Messages;
+using Vjs.NegocioCore.DataRepository.EventSourcing;
+using Vjs.NegocioCore.Messages;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace EventSourcing
 {

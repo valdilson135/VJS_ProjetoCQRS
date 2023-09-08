@@ -1,0 +1,12 @@
+﻿ add-migration Init -Project Vjs.MVC -StartupProject Vjs.MVC -Context ApplicationDbContext
+ update-database -Project Vjs.MVC -StartupProject Vjs.MVC -Context ApplicationDbContext
+
+add-migration Init -Project Vjs.Pagamentos.DataRepository -StartupProject Vjs.MVC -Context PagamentoContext
+ update-database -Project Vjs.Pagamentos.DataRepository -StartupProject Vjs.MVC -Context PagamentoContext
+
+ add-migration Init -Project Vjs.Vendas.DataRepository -StartupProject Vjs.MVC -Context VendasContext
+ update-database -Project Vjs.Vendas.DataRepository -StartupProject Vjs.MVC -Context VendasContext
+
+
+ add-migration Init -Project Vjs.Catalogo.DataRepository -StartupProject Vjs.MVC -Context CatalogoContext
+ update-database -Project Vjs.Catalogo.DataRepository -StartupProject Vjs.MVC -Context CatalogoContext
