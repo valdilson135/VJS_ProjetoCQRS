@@ -8,6 +8,7 @@ using Vjs.MVC.Setup;
 using Vjs.Pagamentos.DataRepository;
 using Vjs.Vendas.DataRepository;
 using System.Reflection;
+using EventStore.ClientAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 

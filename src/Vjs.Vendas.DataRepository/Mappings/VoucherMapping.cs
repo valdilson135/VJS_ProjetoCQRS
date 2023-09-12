@@ -18,7 +18,7 @@ namespace Vjs.Vendas.DataRepository.Mappings
             // 1 : N => Voucher : Pedidos
             builder.HasMany(c => c.Pedidos)
                 .WithOne(c => c.Voucher)
-                .HasForeignKey(c => c.VoucherId);
+                .HasForeignKey(c => c.VoucherId).IsRequired(false);
 
             builder.ToTable("Vouchers");
         }
